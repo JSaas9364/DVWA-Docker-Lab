@@ -47,4 +47,59 @@ DVWA-Docker-Lab/<br/>
   <tbody>
     <tr>
       <td>dvwa</td>
-      <td>Web
+      <td>Web front-end (PHP)</td>
+      <td><code>vulnerables/web-dvwa</code></td>
+    </tr>
+    <tr>
+      <td>mysql</td>
+      <td>MySQL 5.7 backend</td>
+      <td><code>mysql:5.7</code></td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+<h2>🔐 Default Credentials</h2>
+
+<pre>
+Username: admin
+Password: password
+</pre>
+
+---
+
+<h2>🧪 Pentest from Kali (Optional)</h2>
+
+<pre>
+nmap -p 80 &lt;host-ip&gt;<br/>
+firefox http://&lt;host-ip&gt;<br/>
+</pre>
+
+<small>⚠️ Make sure your VM is in <strong>Bridged</strong> or <strong>Host-only</strong> mode and Docker is exposing port 80.</small>
+
+---
+
+<h2>📌 Notes</h2>
+
+<ul>
+  <li>Built with Docker + Docker Compose</li>
+  <li>Tested on Windows 11 (WSL2 backend)</li>
+  <li>Great for testing:
+    <ul>
+      <li>SQLi, XSS, CSRF</li>
+      <li>Burp Suite/ZAP scans</li>
+      <li>Low/Medium/High DVWA modes</li>
+    </ul>
+  </li>
+</ul>
+
+---
+
+<h2>🛠️ TODO</h2>
+
+<ul>
+  <li>[ ] Add custom Docker network</li>
+  <li>[ ] Automate ZAP/Burp scan via script</li>
+  <li>[ ] Log attacks to ELK or Splunk</li>
+</ul>
