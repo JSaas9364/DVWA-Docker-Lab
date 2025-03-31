@@ -69,7 +69,7 @@ Password: password
 
 ---
 
-<h2>🧪 Pentest from Kali (Optional)</h2>
+<h2>🧪 Pentest from Kali</h2>
 
 <pre>
 nmap -p 80 &lt;host-ip&gt;<br/>
